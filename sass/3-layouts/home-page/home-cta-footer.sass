@@ -1,0 +1,39 @@
+.cta-footer
+	margin-bottom: 0
+	overflow: hidden
+
+	& :nth-child(n)
+		position: relative
+	& :nth-child(2n)//the content
+		height: 300px
+		display: flex
+		align-items: center
+		justify-content: space-around
+		padding: 20px 10px
+
+	.skewed
+		position: absolute
+		top: 0
+		bottom: 0
+		left: 0
+		right: 0
+		+bdr
+		// background-image: linear-gradient(#ff9d2f, #ff6126)
+		transform: skewY(3deg)
+		transform-origin: top right
+
+	.mailing-list
+		.skewed
+			border-bottom: none
+			border-top: none
+
+	.survey
+		.content
+			border-top: 2px solid black
+
+	.home-footer
+		.skewed
+			background:
+				image: url('/assets/img/footer-test.jpg')
+				size: cover
+			border-bottom: none

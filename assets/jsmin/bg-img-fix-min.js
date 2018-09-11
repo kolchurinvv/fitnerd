@@ -1,0 +1,1 @@
+$(document).ready(function($){var t=$(".dialog-img").height(),h=Math.round(t);$(".dialog-img").height(h);var i=$(".cta-footer").height();i-=Math.sin(.0523599)/(Math.sin(1.51844)/1100),$(".cta-footer").height(i)});

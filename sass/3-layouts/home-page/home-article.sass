@@ -1,0 +1,70 @@
+//colors
+$star-wars-stroke: #ffd700
+//----
+.article
+	+bdr
+	width: calc(65% - 4px)
+	padding: 20px 10px
+	position: relative
+
+	.partition-title
+		font-size: 1.5rem
+		max-width: 22%
+		position: relative
+		padding-top: 20px
+		padding-bottom: 10px
+		left: 78%
+		display: block
+		text-align: center
+
+	.comic-character
+		height: 290px
+		width: 180px
+		position: relative
+		float: right
+		background: 
+			image: url(http://fillmurray.com/180/290) //temp
+			size: cover
+
+	.heading
+		display: block
+		a
+			text-decoration: none
+			display: block
+			&:visited 
+				color: black
+
+		.name-wrap
+			display: flex
+			justify-content: center
+			width: 100%
+
+			.name
+				background-color: black
+				border: 1px solid $star-wars-stroke
+				display: block
+				padding: 10px 20px
+				text-transform: uppercase
+				text-align: center
+				-webkit-text-stroke: 1px $star-wars-stroke
+				font:
+					size: 3rem
+					weight: 900
+
+		.meta-info
+			font:
+				size: 0.75rem
+				style: oblique
+				weight: 300
+			text-transform: capitalize
+			color: #ccc
+			display: inline-block
+
+			&:visited
+				color: #999
+	.foreword
+		p
+			text-indent: 1rem
+			font:
+				size: 1.1rem
+				weight: 300

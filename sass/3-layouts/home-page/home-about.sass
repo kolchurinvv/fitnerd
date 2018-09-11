@@ -1,0 +1,45 @@
+.about
+	position: relative
+	height: 1100px
+	width: 100%
+	+bdr
+
+	& :nth-child(n)
+		box-sizing: content-box
+
+	.about-wrapper
+		height: 100%
+		& :nth-child(n)
+			float: left
+			position: relative
+			display: block
+			width: calc(50% - 7px)
+			margin-bottom: 10px
+			height: calc(33.333333% - 9px)
+			+bdr
+		& :nth-child(2n)
+			left: 10px
+			border-right: none
+		& :nth-child(2n+1)
+			border-left: none
+		& :nth-child(1), & :nth-child(2)
+			border-top: none
+		& :last-child, & :nth-last-child(2)
+			border-bottom: none
+			margin-bottom: 0
+
+	.dialog-img
+		height: 39%
+		width: 52%
+		position: absolute
+		right: 0px
+		top: 50%
+		transform: translateY(-50%)
+		+bdr
+		border-right: none
+		background:
+			image: url("http://fillmurray.com/600/600")
+			size: cover
+			position: center
+		z-index: 1
+
